@@ -1,38 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Test Portfolio Homepage</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resit Portfolio 1 - Lili Stuwe</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 2rem 1rem;
       text-align: center;
-      background-color: #f5f5f5;
-      padding: 50px;
     }
-    h1 {
-      color: #222;
+
+    nav {
+      background: #444;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
     }
-    p {
-      color: #555;
-      font-size: 1.2rem;
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
     }
-    .box {
-      margin: 2rem auto;
-      padding: 2rem;
-      background: white;
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .task {
+      background: #fff;
       border-radius: 8px;
-      width: 80%;
-      max-width: 600px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .task img {
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 4px;
+    }
+
+    footer {
+      background: #eee;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .caption {
+      font-size: 0.95rem;
+      color: #555;
+      text-align: center;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Hello 👋</h1>
-    <p>This is a test homepage for my RESIT PORT 1 website.</p>
-    <p>If you're seeing this, it means the site works!</p>
-  </div>
+  <header>
+    <h1>Resit Portfolio 1</h1>
+    <p>By Lili Stuwe</p>
+  </header>
+
+  <nav>
+    <a href="#flyer">Flyer</a>
+    <a href="#typography">Typography</a>
+    <a href="#references">References</a>
+  </nav>
+
+  <main>
+    <section class="task" id="flyer">
+      <h2>🖼️ Task 1: Redesigned Flyer</h2>
+      <p><strong>Reflection:</strong> For this task, I redesigned a flyer using CARP principles. I applied contrast through bold type and colour separation, alignment by grid layout, repetition through consistent icon styling, and proximity by grouping related content. I used Canva to ensure a balanced and clean layout. If I could improve anything, I would refine the spacing even more for visual breathing room.</p>
+      <img src="images/flyer-redesign.jpg" alt="Redesigned flyer" />
+      <p class="caption">Designed in Canva using custom icons and layout styles</p>
+      <p><a href="docs/flyer-redesign.pdf" target="_blank">Download Flyer (PDF)</a></p>
+    </section>
+
+    <section class="task" id="typography">
+      <h2>🔤 Task 2: Typographic Systems</h2>
+      <p><strong>Reflection:</strong> I explored 8 typographic systems using layouts inspired by the Weisman Art Museum brief. Each layout was designed in Canva and saved as a single composite image. I experimented with font pairing, hierarchy, and visual flow to meet each system's logic. My favourite was the radial system because it challenged my use of space. I'd like to improve my balance in modular grids next time.</p>
+      <img src="images/typographic-systems.jpg" alt="Typography layouts" />
+      <p class="caption">Typography systems shown: Axial, Radial, Dilatational, Random, Grid, Modular, Transitional, Bilateral</p>
+      <p><a href="docs/typographic-systems.pdf" target="_blank">Download Typography Layouts (PDF)</a></p>
+    </section>
+
+    <section class="task" id="references">
+      <h2>📄 References and Tools</h2>
+      <ul>
+        <li>Canva (used for flyer and typography layout creation)</li>
+        <li>VS Code (used for HTML/CSS coding)</li>
+        <li>GitHub Pages (used to host this website)</li>
+        <li>HTML/CSS resources from UWE coding worksheets</li>
+      </ul>
+      <p>Note: All work is original. No AI was used to generate this website content.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hosted on GitHub Pages · UWE Resit Assignment 2025 · UFCFHL-30-1</p>
+  </footer>
 </body>
 </html>
