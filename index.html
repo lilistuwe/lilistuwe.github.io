@@ -7,22 +7,25 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefefe;
       color: #333;
       line-height: 1.6;
     }
 
     header {
-      background-color: #222;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
       color: #fff;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
 
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
     nav {
-      background: #444;
-      color: #fff;
+      background: #222;
       display: flex;
       justify-content: center;
       gap: 2rem;
@@ -32,7 +35,12 @@
     nav a {
       color: #fff;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
     }
 
     main {
@@ -44,27 +52,28 @@
 
     .task {
       background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      margin: 1.5rem 0;
-      padding: 1.5rem;
-      max-width: 800px;
-      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      margin: 2rem 0;
+      padding: 2rem;
+      max-width: 900px;
+      width: 95%;
+      transition: transform 0.3s;
+    }
+
+    .task:hover {
+      transform: scale(1.01);
+    }
+
+    .task h2 {
+      color: #2575fc;
     }
 
     .task img {
       width: 100%;
       height: auto;
       margin-top: 1rem;
-      border-radius: 4px;
-    }
-
-    footer {
-      background: #eee;
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
+      border-radius: 6px;
     }
 
     .caption {
@@ -73,12 +82,24 @@
       text-align: center;
       margin-top: 0.5rem;
     }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #f1f1f1;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Resit Portfolio 1</h1>
-    <p>By Lili Stuwe</p>
+    <p><em>Curated & Created by Lili Stuwe</em></p>
   </header>
 
   <nav>
@@ -89,35 +110,35 @@
 
   <main>
     <section class="task" id="flyer">
-      <h2>🖼️ Task 1: Redesigned Flyer</h2>
-      <p><strong>Reflection:</strong> For this task, I redesigned a flyer using CARP principles. I applied contrast through bold type and colour separation, alignment by grid layout, repetition through consistent icon styling, and proximity by grouping related content. I used Canva to ensure a balanced and clean layout. If I could improve anything, I would refine the spacing even more for visual breathing room.</p>
+      <h2>🎨 Task 1: Redesigned Flyer</h2>
+      <p><strong>Reflection:</strong> This flyer redesign reimagines layout through the lens of CARP principles: <em>contrast</em> in bold type and deep colours; <em>alignment</em> via a clean grid structure; <em>repetition</em> through icon style and spacing; and <em>proximity</em> in tight groupings. Designed in Canva, this layout reflects visual storytelling and brand clarity. Next time, I’d explore asymmetry for added flair.</p>
       <img src="images/flyer-redesign.jpg" alt="Redesigned flyer" />
-      <p class="caption">Designed in Canva using custom icons and layout styles</p>
-      <p><a href="docs/flyer-redesign.pdf" target="_blank">Download Flyer (PDF)</a></p>
+      <p class="caption">Designed using Canva with layered grids, contrast and icon structure</p>
+      <p><a href="docs/flyer-redesign.pdf" target="_blank">📄 Download Flyer (PDF)</a></p>
     </section>
 
     <section class="task" id="typography">
-      <h2>🔤 Task 2: Typographic Systems</h2>
-      <p><strong>Reflection:</strong> I explored 8 typographic systems using layouts inspired by the Weisman Art Museum brief. Each layout was designed in Canva and saved as a single composite image. I experimented with font pairing, hierarchy, and visual flow to meet each system's logic. My favourite was the radial system because it challenged my use of space. I'd like to improve my balance in modular grids next time.</p>
+      <h2>🖊️ Task 2: Typographic Systems</h2>
+      <p><strong>Reflection:</strong> This visual series explores 8 typographic systems as compositional experiments. From radial flow to bilateral balance, each layout studies structure, motion, and tone. Created in Canva, I emphasised hierarchy, scale, and font pairing. I especially enjoyed the randomness challenge and using curved text. I would next refine contrast and negative space to push legibility and energy further.</p>
       <img src="images/typographic-systems.jpg" alt="Typography layouts" />
-      <p class="caption">Typography systems shown: Axial, Radial, Dilatational, Random, Grid, Modular, Transitional, Bilateral</p>
-      <p><a href="docs/typographic-systems.pdf" target="_blank">Download Typography Layouts (PDF)</a></p>
+      <p class="caption">Typography modes shown: Axial, Radial, Dilatational, Random, Grid, Modular, Transitional, Bilateral</p>
+      <p><a href="docs/typographic-systems.pdf" target="_blank">📄 Download Typography Layouts (PDF)</a></p>
     </section>
 
     <section class="task" id="references">
-      <h2>📄 References and Tools</h2>
+      <h2>📄 References & Tools</h2>
       <ul>
-        <li>Canva (used for flyer and typography layout creation)</li>
-        <li>VS Code (used for HTML/CSS coding)</li>
-        <li>GitHub Pages (used to host this website)</li>
-        <li>HTML/CSS resources from UWE coding worksheets</li>
+        <li><strong>Canva</strong> – Layout & design creation (flyer & typographic systems)</li>
+        <li><strong>VS Code</strong> – HTML/CSS authoring</li>
+        <li><strong>GitHub Pages</strong> – Hosting & live deployment</li>
+        <li><strong>UWE Coding Worksheets</strong> – Core Flexbox and HTML/CSS structure</li>
       </ul>
-      <p>Note: All work is original. No AI was used to generate this website content.</p>
+      <p><em>All visuals and layout work are original. No AI was used for content or assets.</em></p>
     </section>
   </main>
 
   <footer>
-    <p>Hosted on GitHub Pages · UWE Resit Assignment 2025 · UFCFHL-30-1</p>
+    <p>© 2025 · Lili Stuwe · Digital Media BSc · UWE Resit Portfolio · UFCFHL-30-1</p>
   </footer>
 </body>
 </html>
