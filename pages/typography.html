@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typographic Systems – Lili Stuwe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #fff;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.3rem;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .poster {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      margin: 2rem 0;
+      padding: 2rem;
+      max-width: 850px;
+      width: 95%;
+      transition: transform 0.3s;
+    }
+
+    .poster:hover {
+      transform: scale(1.01);
+    }
+
+    .poster h2 {
+      color: #2575fc;
+    }
+
+    .poster img {
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 6px;
+    }
+
+    .caption {
+      font-size: 0.95rem;
+      color: #555;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      background: #f1f1f1;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Typographic Systems</h1>
+    <p><em>by Lili Stuwe</em></p>
+  </header>
+
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="typography.html">✍️ Typography</a>
+  </nav>
+
+  <main>
+    <section class="poster">
+      <h2>Axial</h2>
+      <img src="images/typography systems_axial.png" alt="Axial system" />
+      <p class="caption">Text aligned to a single axis, creating a clean flow.</p>
+    </section>
+
+    <section class="poster">
+      <h2>Bilateral</h2>
+      <img src="images/typography systems_Bilateral.png" alt="Bilateral system" />
+      <p class="caption">Symmetrical type layout along a central vertical axis.</p>
+    </section>
+
+    <section class="poster">
+      <h2>Dilatational</h2>
+      <img src="images/typography systems_Dilational.png" alt="Dilatational system" />
+      <p class="caption">Text radiates outward in concentric circles for dynamic rhythm.</p>
+    </section>
+
+    <section class="poster">
+      <h2>Grid</h2>
+      <img src="images/typography systems_Grid.png" alt="Grid system" />
+      <p class="caption">Structured layout using vertical and horizontal guides.</p>
+    </section>
+
+    <section class="poster">
+      <h2>Modular</h2>
+      <img src="images/typography systems_Modular.png" alt="Modular system" />
+      <p class="caption">Uses modular units to maintain spacing and hierarchy.</p>
+    </section>
+
+    <section class="poster">
+      <h2>Radial</h2>
+      <img src="images/typography systems_Radaial.png" alt="Radial system" />
+      <p class="caption">Elements radiate from a common focal point.</p>
+    </section>
+
+    <section class="poster">
+      <h2>Random</h2>
+      <img src="images/typography systems_random.png" alt="Random system" />
+      <p class="caption">Type is placed with expressive and non-linear intent.</p>
+    </section>
+
+    <section class="poster">
+      <h2>Transitional</h2>
+      <img src="images/typography systems_Transitional.png" alt="Transitional system" />
+      <p class="caption">Gradual change from one visual form to another.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p> Lili Stuwe Digital Media</p>
+  </footer>
+</body>
+</html>
