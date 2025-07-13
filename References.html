@@ -8,15 +8,15 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000;
-      color: #fff;
+      background-color: #111;
+      color: white;
       line-height: 1.6;
     }
 
     header {
       background: linear-gradient(to right, #6a11cb, #2575fc);
       color: #fff;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
 
@@ -40,55 +40,60 @@
     }
 
     main {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: #fff;
-      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .content-box {
+      background-color: white;
+      color: black;
       padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      width: 90%;
     }
 
     footer {
-      background: #111;
-      color: #777;
-      text-align: center;
+      background: #f1f1f1;
       padding: 1rem;
+      text-align: center;
       font-size: 0.9rem;
-    }
-
-    li {
-      margin-bottom: 1rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>References</h1>
-    <p><em>Sources used in my design project</em></p>
+    <p><em>All sources used for my portfolio work</em></p>
   </header>
 
- <nav>
-  <a href="index.html">Home</a>
-  <a href="typography.html">Typography</a>
-  <a href="References.html">References</a>
- <a href="posters.html">Fliers</a>
-</nav>
-
-  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="typography.html">Typography</a>
+    <a href="posters.html">Fliers</a>
+    <a href="references.html">References</a>
   </nav>
 
   <main>
-    <h2>Reference List (Harvard UWE Style)</h2>
-    <ul>
-      <li>Williams, R. (2015) <em>The Non-Designer’s Design Book</em>. 3rd ed. Berkeley: Peachpit Press.</li>
-      <li>Interaction Design Foundation (2023) <em>Repetition in Design</em>. Available at: https://www.interaction-design.org/literature/topics/repetition (Accessed: 13 July 2025).</li>
-      <!-- Add more references here -->
-    </ul>
+    <section class="content-box">
+      <h2>References</h2>
+      <ul>
+        <li>Williams, R. (2015). <em>The Non-Designer’s Design Book</em>. 3rd ed. Peachpit Press.</li>
+        <li>Interaction Design Foundation. (2023). <em>Proximity Principle</em>. Available at: https://www.interaction-design.org/literature/topics/proximity (Accessed: 13 July 2025).</li>
+        <!-- Add more references here -->
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>Lili Stuwe </p>
+    <p>© 2025 · Lili Stuwe · Digital Media BSc · UWE Resit Portfolio</p>
   </footer>
+
 </body>
 </html>
+
